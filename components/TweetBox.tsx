@@ -80,7 +80,7 @@ const TweetBox = ({ setTweets }: Props) => {
           <div className="flex items-center">
             <div className="flex flex-1 space-x-2 text-twitter">
               <PhotographIcon
-                onClick={() => setImageUrlBoxIsOpen(!imageUrlBoxIsOpen)}
+                onClick={() => session && setImageUrlBoxIsOpen(!imageUrlBoxIsOpen)}
                 className="h-5 w-5 transition-transform duration-150 ease-out hover:scale-150 cursor-pointer"
               />
               <SearchCircleIcon className="h-5 w-5" />
